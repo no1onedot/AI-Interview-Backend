@@ -19,8 +19,8 @@ app.use(
   cors({
     origin: [
           "http://localhost:5173",
-      "https://ai-interview-topaz-theta.vercel.app",
-      "https://ai-interview-7cg4ij1i4-no1onedots-projects.vercel.app"
+      "hhttps://ai-interview-git-main-no1onedots-projects.vercel.app",
+      "https://ai-interview-qs4lj2qy7-no1onedots-projects.vercel.app"
     ],
     credentials: true,
   })
