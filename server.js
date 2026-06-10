@@ -18,11 +18,7 @@ app.use((req, res, next) => {
 });
 app.use(
   cors({
-    origin: [
-          "http://localhost:5173",
-      "hhttps://ai-interview-git-main-no1onedots-projects.vercel.app",
-      "https://ai-interview-qs4lj2qy7-no1onedots-projects.vercel.app"
-    ],
+    origin: true,
     credentials: true,
   })
 );
