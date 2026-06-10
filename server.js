@@ -12,8 +12,9 @@ dotenv.config();
 const app = express();
 app.use(
   cors({
-    origin:[ "http://localhost:5173",
-      "https://ai-interview-topaz-theta.vercel.app/"
+    origin: [
+      "http://localhost:5173",
+      "https://ai-interview-topaz-theta.vercel.app"
     ],
     credentials: true,
   })
