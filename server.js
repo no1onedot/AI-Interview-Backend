@@ -13,8 +13,9 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
-      "https://ai-interview-topaz-theta.vercel.app"
+          "http://localhost:5173",
+      "https://ai-interview-topaz-theta.vercel.app",
+      "https://ai-interview-7cg4ij1i4-no1onedots-projects.vercel.app"
     ],
     credentials: true,
   })
