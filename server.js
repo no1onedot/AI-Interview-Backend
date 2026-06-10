@@ -20,6 +20,10 @@ app.use(
     credentials: true,
   })
 );
+app.use((req, res, next) => {
+  console.log("Origin:", req.headers.origin);
+  next();
+});
 app.use(express.json());  
 
 app.use(session({
