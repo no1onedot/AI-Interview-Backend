@@ -10,6 +10,11 @@ dotenv.config();
 
 
 const app = express();
+app.use((req, res, next) => {
+  console.log("Origin:", req.headers.origin);
+  console.log("Path:", req.path);
+  next();
+});
 app.use(
   cors({
     origin: [
@@ -20,11 +25,7 @@ app.use(
     credentials: true,
   })
 );
-app.use((req, res, next) => {
-  console.log("Origin:", req.headers.origin);
-  next();
-});
-app.use(express.json());  
+
 
 app.use(session({
   secret: process.env.SESSION_SECRET,
