@@ -1,3 +1,4 @@
+console.log("VERSION 2");
 import express from 'express';
 import cors from 'cors';
 import { connectDB } from "./Config/db.js";
