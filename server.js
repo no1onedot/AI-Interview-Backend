@@ -18,7 +18,10 @@ app.use((req, res, next) => {
 });
 app.use(
   cors({
-    origin: true,
+    origin: [
+      "http://localhost:5173",
+      "https://your-frontend-name.onrender.com",
+    ],
     credentials: true,
   })
 );
